@@ -1,4 +1,4 @@
-2189
+396c
 <!DOCTYPE html>
 <html lang="tr" class="no-js no-svg">
 <head>
@@ -95,24 +95,248 @@ img.emoji {
 		<main id="main" class="site-main" role="main">
 
 			
-<section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title">Hiçbir şey bulunamadı</h1>
-	</header>
-	<div class="page-content">
-		
-			<p>Görünen o ki bakındığınız her ne ise bulamıyoruz. Belki arama özelliği yardımcı olabilir.</p>
-			
+<article id="post-16" class="post-16 post type-post status-publish format-standard hentry category-genel">
+		<header class="entry-header">
+		<div class="entry-meta"><span class="screen-reader-text">Yayım tarihi</span> <a href="https://mehmetbaskir.github.io/mehmetbaskir/2019/06/28/arama-motoru-nasil-calisir/" rel="bookmark"><time class="entry-date published updated" datetime="2019-06-28T03:28:54+03:00">28 Haziran 2019</time></a></div><!-- .entry-meta --><h3 class="entry-title"><a href="https://mehmetbaskir.github.io/mehmetbaskir/2019/06/28/arama-motoru-nasil-calisir/" rel="bookmark">Arama Motoru Nasıl Çalışır?</a></h3>	</header><!-- .entry-header -->
 
-<form role="search" method="get" class="search-form" action="https://mehmetbaskir.github.io/mehmetbaskir/">
-	<label for="search-form-1">
-		<span class="screen-reader-text">Ara:</span>
-	</label>
-	<input type="search" id="search-form-1" class="search-field" placeholder="Ara &hellip;" value="" name="s" />
-	<button type="submit" class="search-submit"><svg class="icon icon-search" aria-hidden="true" role="img"> <use href="#icon-search" xlink:href="#icon-search"></use> </svg><span class="screen-reader-text">Ara</span></button>
-</form>
-	</div><!-- .page-content -->
-</section><!-- .no-results -->
+	
+	<div class="entry-content">
+		
+<p>Google’ yi referans alalım, biz aslında Google’ da arama yaptığımızda internette arama yapmış olmuyoruz, biz Google’ nin  dizininde arama yapmış oluyoruz. Peki bu dizin nedir nasıl oluşur? Crawling işlemi örümcek adı verilen yazılımlarla yapılır.  Örümcekler öncelikle birkaç sıteden başlar ve o sitelerdeki linkleri takip ederek bulduğu her siteyi Google’ nin dizininde depolar,  bu olay milyarlarca site dizine eklenene kadar devam eder.</p>
+
+
+
+<h2>Robots.txt Nedir?</h2>
+
+
+
+<p>Robots.txt, arama motoru örümceklerinin web sayfalarını nasıl tarayacağını belirlemek için kullanılan metin dosyalarıdır.  Bu tür örümcekler web sitemize geldiklerinde ilk iş eğer sahipsek “robots.txt” dosyasına bakmak olacaktır.  Bu sayfanın içerisindeki komutlara göre de hareket edecek ve tarama işlemini tamamlayacaktır.  Şayet, robots.txt dosyamız yoksa örümcekler web sunucumuz içerisinde faydalı faydasız tüm her şeyi taramaya çalışacaktır.</p>
+
+
+
+<h2>Özet</h2>
+
+
+
+<p>Arama motoru keşfi için iki metot vardır. Bunlardan biri doğrudan metot, dizinleri ve ilişkili içerikleri önbelleklerden aramakla ilgilidir.  Dolaylı metot ise forumlar, haber grupları vb. yerlerden arayarak hassas tasarım ve yapılandırma bilgisi toplamakla ilgilidir.</p>
+
+
+
+<p>Bir arama motoru crawling işlemini tamamladıktan sonra web sayfasını etiketlere ve ilişkili özelliklere göre dizinine alır.  Eğer web sitesinin robots.txt web sitesinin hayatı boyunca güncellenmedi ve örümceklere içeriği dizine almamasını öğreten  HTML Meta etiketleri kullanılmadı ise arama motorları site sahibi tarafından istenmeyen içeriği kaldırmak için önceden adı geçen  robots.txt, HTML Meta etiketleri, kimlik doğrulama ve arama motorları tarafından sağlanan araçları kullanmalı.</p>
+
+
+
+<h2>Testin Amaçları</h2>
+
+
+
+<p>Sistemin hangi hassas tasarım yapılandırma bilgilerini doğrudan(örgütün web sitesinde) veya dolaylı(üçüncü şahısların web sitesinden)  olarak gösterdiğini anlamak.</p>
+
+
+
+<h2>Nasıl Test Edilir?</h2>
+
+
+
+<p>Şunları bulmak için bir arama motoru kullanın:</p>
+
+
+
+<p>-) Ağ diyagramları ve yapılandırmaları</p>
+
+
+
+<p>-) Yönetici ve diğer personeller tarafından arşivlenen post ve mailleri</p>
+
+
+
+<p>-) Giriş prosedürleri ve kullanıcı adı formatları</p>
+
+
+
+<p>-) Kullanıcı adları ve parolalar</p>
+
+
+
+<p>-) Hata mesajlarının içeriği</p>
+
+
+
+<p>-) Web sitesinin geliştirme, test, UAT(kullanici kabul testi) ve aşamalandırma sürümleri</p>
+
+
+
+<h2>Arama Operatörleri</h2>
+
+
+
+<p>Gelişmiş “site:” operatörünü kallanarak, arama sonuçlarınızı spesifik bir web sitesine kısıtlamanız mümkün. Testlerinizi yalnızca bir  arama motoru sağlayıcısı ile kısıtlamayın, içeriği ne zaman dizinine aldığı ve kendi algoritmalarına göre bize farklı sonuçlar üretebilirler.</p>
+
+
+
+<p>Şu arama motorlarını da kullanmayı düşünün:</p>
+
+
+
+<p>-) Baidu</p>
+
+
+
+<p>-) binsearch.info</p>
+
+
+
+<p>-) Bing</p>
+
+
+
+<p>-) Duck Duck Go</p>
+
+
+
+<p>-) ixquick/Startpage</p>
+
+
+
+<p>-) Shodan</p>
+
+
+
+<p>-) PunkSpider</p>
+
+
+
+<p>-) Google</p>
+
+
+
+<p>Duck Duck Go ve ixquick/Startpage arama motorları sizin hakkınızda daha az bilgi sızıntısı sağlar.</p>
+
+
+
+<p>Google gelişmis “cache:” arama operatörünü de sağlar, ama bu Google arama sonuçlarının linklerinin yanındaki yesil oka basınca çıkan “Cached”  butonuna tıklamakla eş değerdir. Bu yüzden gelişmis “site:” arama operatörünü kullandıktan sonra “Cached” butonuna tıklamak tercih edilir.</p>
+
+
+
+<h2>Script-Kiddie Nedir?</h2>
+
+
+
+<p>Script-Kiddie öğrenmeyi, etik ilkeleri reddeden, amacı sadece başka sistemlere zarar vermek ve bilgi çalmak olan bilgisayar korsanlarıdır.  Profesyonel bilgisayar korsanları bu terimi script-kiddie’leri aşağılamak için kullanır. Script-kiddie’ler başka bilgisayar korsanlarının  yazdığı programları kullanır çünkü kendilerinin yazma becerileri pek yoktur. Profesyonel bilgisayar korsanları aslında bunları pek bilgisayar  korsanı olarak görmezler.</p>
+
+
+
+<p>PunkSpider, web uygulaması güvenlik açığı arama motorudur. Penetrasyon testini elle yapan kisiler bunu pek kullanmaz. Fakat bu  script-kiddie’ler tarafından güvenlik acigi bulmanin kolaylığının göstergesi olarak faydalı olabilir.</p>
+
+
+
+<p>Örnek: Tipik bir arama motoru tarafından dizine alınan owasp.org’un web içerigini bulmak icin söz dizimi:</p>
+
+
+
+<p>site:owasp.org</p>
+
+
+
+<figure class="wp-block-image"><img src="https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/site-komutu1.png" alt="" class="wp-image-20" srcset="https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/site-komutu1.png 808w, https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/site-komutu1-254x300.png 254w, https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/site-komutu1-768x907.png 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></figure>
+
+
+
+<p>Ve önbelleğe alınmış owasp.org’un index.html dosyasını göstermek için söz dizimi:</p>
+
+
+
+<p>cache:owasp.org</p>
+
+
+
+<figure class="wp-block-image"><img src="https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/otg-001_image-1.png" alt="" class="wp-image-21" srcset="https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/otg-001_image-1.png 982w, https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/otg-001_image-1-295x300.png 295w, https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/otg-001_image-1-768x780.png 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></figure>
+
+
+
+<h2>Google Hacking Database</h2>
+
+
+
+<p>Google Hacking Database, Google için yararlı arama sorgularının listesidir.<br> Sorgular birkaç kategoriye ayrılır:</p>
+
+
+
+<p>-) Tutunma Noktası</p>
+
+
+
+<p>-) Kullanıcı adlarını içeren dosyalar</p>
+
+
+
+<p>-) Hassas Dizinler</p>
+
+
+
+<p>-) Savunmasız Dosyalar</p>
+
+
+
+<p>-) Savunmasız Sunucular</p>
+
+
+
+<p>-) Hata mesajları</p>
+
+
+
+<p>-) İlginç Bilgi İçeren Dosyalar</p>
+
+
+
+<p>-) Parolalar İçeren Dosyalar</p>
+
+
+
+<p>-) Hassas Online Alışveriş Bilgisi</p>
+
+
+
+<p>Diğer Sorgular:</p>
+
+
+
+<figure class="wp-block-image"><img src="https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/2-2.png" alt="" class="wp-image-23" srcset="https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/2-2.png 616w, https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/2-2-300x249.png 300w" sizes="(max-width: 616px) 100vw, 616px" /></figure>
+
+
+
+<h2>Araçlar</h2>
+
+
+
+<p>-) FoundStone SiteDigger( https://sitedigger.apponic.com )</p>
+
+
+
+<p>-) Google Hacker(http://yehg.net/lab/pr0js/files.php/googlehacker.zip)</p>
+
+
+
+<p>-) PunkSPIDER</p>
+
+
+
+<h2>Referanslar</h2>
+
+
+
+<p>-) Google nasıl çalışır – https://support.google.com/webmasters/answer/70897</p>
+
+
+
+<p>-) Operatörler hakkında daha fazla bilgi- https://support.google.com/websearch/answer/2466433?hl=tr</p>
+
+b446
+	</div><!-- .entry-content -->
+
+	
+</article><!-- #post-16 -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
@@ -121,18 +345,24 @@ img.emoji {
 	<section id="search-2" class="widget widget_search">
 
 <form role="search" method="get" class="search-form" action="https://mehmetbaskir.github.io/mehmetbaskir/">
-	<label for="search-form-2">
+	<label for="search-form-1">
 		<span class="screen-reader-text">Ara:</span>
 	</label>
-	<input type="search" id="search-form-2" class="search-field" placeholder="Ara &hellip;" value="" name="s" />
+	<input type="search" id="search-form-1" class="search-field" placeholder="Ara &hellip;" value="" name="s" />
 	<button type="submit" class="search-submit"><svg class="icon icon-search" aria-hidden="true" role="img"> <use href="#icon-search" xlink:href="#icon-search"></use> </svg><span class="screen-reader-text">Ara</span></button>
 </form>
-
-af86
-</section><section id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widget-title">Son Yorumlar</h2><ul id="recentcomments"></ul></section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Arşivler</h2>		<ul>
+</section>		<section id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title">Son Yazılar</h2>		<ul>
+											<li>
+					<a href="https://mehmetbaskir.github.io/mehmetbaskir/2019/06/28/arama-motoru-nasil-calisir/">Arama Motoru Nasıl Çalışır?</a>
+									</li>
 					</ul>
+		</section><section id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widget-title">Son Yorumlar</h2><ul id="recentcomments"></ul></section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Arşivler</h2>		<ul>
+				<li><a href='https://mehmetbaskir.github.io/mehmetbaskir/2019/06/'>Haziran 2019</a></li>
+		</ul>
 			</section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Kategoriler</h2>		<ul>
-			<li class="cat-item-none">Kategori yok</li>		</ul>
+				<li class="cat-item cat-item-1"><a href="https://mehmetbaskir.github.io/mehmetbaskir/category/genel/">Genel</a>
+</li>
+		</ul>
 			</section><section id="meta-2" class="widget widget_meta"><h2 class="widget-title">Meta</h2>			<ul>
 						<li><a href="https://mehmetbaskir.github.io/mehmetbaskir/wp-login.php">Giriş</a></li>
 			<li><a href="https://mehmetbaskir.github.io/mehmetbaskir/feed/">Yazılar <abbr title="Really Simple Syndication">RSS</abbr></a></li>
