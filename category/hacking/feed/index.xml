@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Hacking &#8211; Mehmet Baskir</title>
+	<atom:link href="https://mehmetbaskir.github.io/mehmetbaskir/category/hacking/feed/" rel="self" type="application/rss+xml" />
+	<link>https://mehmetbaskir.github.io/mehmetbaskir</link>
+	<description>ETHICAL HACKING</description>
+	<lastBuildDate>Fri, 28 Jun 2019 11:54:31 +0000</lastBuildDate>
+	<language>tr</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.2</generator>
+	<item>
+		<title>WEB SUNUCUSU PARMAKİZİ(OTG-INFO-002)</title>
+		<link>https://mehmetbaskir.github.io/mehmetbaskir/2019/06/28/web-sunucusu-parmakiziotg-info-002/</link>
+				<comments>https://mehmetbaskir.github.io/mehmetbaskir/2019/06/28/web-sunucusu-parmakiziotg-info-002/#respond</comments>
+				<pubDate>Fri, 28 Jun 2019 11:54:31 +0000</pubDate>
+		<dc:creator><![CDATA[root]]></dc:creator>
+				<category><![CDATA[Genel]]></category>
+		<category><![CDATA[Hacking]]></category>
+
+		<guid isPermaLink="false">https://mehmetbaskir.github.io/mehmetbaskir/?p=30</guid>
+				<description><![CDATA[Özet Bu bloğumda konumuz web sunucularının parmakizi, nasıl biz insanlarda parmakizi eşsiz ve parmakizi ile o insanin bilgilerine ulaşabiliyorsak bu web sunucuları için de geçerlidir. Web sunucusu parmakizi sizin icin oldukça kritik bir görevdir. Calışan bir web sunucusunun sürümünü ve türünü bilmek sizin, bilinen güvenlik açıklarını ve test sırasında kullanılacak uygun açıkları belirlemenizi sağlar. Bugün &#8230; <p class="link-more"><a href="https://mehmetbaskir.github.io/mehmetbaskir/2019/06/28/web-sunucusu-parmakiziotg-info-002/" class="more-link">Okumaya devam et<span class="screen-reader-text"> "WEB SUNUCUSU PARMAKİZİ(OTG-INFO-002)"</span></a></p>]]></description>
+								<content:encoded><![CDATA[
+<h2>Özet</h2>
+
+
+
+<p>Bu bloğumda konumuz web sunucularının parmakizi, nasıl biz insanlarda parmakizi eşsiz ve  parmakizi ile o insanin bilgilerine ulaşabiliyorsak bu web sunucuları için de geçerlidir.</p>
+
+
+
+<p>Web sunucusu parmakizi sizin icin oldukça kritik bir görevdir.<br> Calışan bir web sunucusunun sürümünü ve türünü bilmek sizin, bilinen güvenlik <br> açıklarını ve test sırasında kullanılacak uygun açıkları belirlemenizi sağlar. Bugün <br> piyasada birkaç farklı satıcı ve web sunucusu sürümü bulunmaktadır. Test edilen web <br> sunucusunun tipini bilmek test işlemine önemli ölçüde yardımcı olur ve testi seyrini de <br> değistirebilir.</p>
+
+
+
+<p>Bu bilgiler, web sunucusuna belirli komutlar gönderilerek ve çıktıyı analiz ederek elde <br> edilebilir, cünkü web sunucusunun her sürümü bu komutlara farklı şekilde yanıt verebilir. <br> Her web sunucusu türünün belirli komutlara nasıl yanıt verdiği bilinir ve bu bilgi bir web <br> sunucusu parmakizi veritabanında saklanır ve siz bu komutları web sunucusuna <br> gönderirsiniz, sonucu analiz eder ve bilinen veritabanı imzaları ile karşılaştırırsınız. </p>
+
+
+
+<p>Unutmayin!!!<br> Farklı sürümlerin aynı komuta benzer şekilde tepki verebileceğinden, web sunucusunu doğru bir  şekilde tanımlamak için genellikle birkaç farklı komut kullanılır. Nadiren farklı sürümler tüm HTTP komutlarına aynı şekilde tepki verir. Böylece birkaç farklı komut göndererek  doğruluğunu artırabilirsiniz.</p>
+
+
+
+<h2>Testin Amacı</h2>
+
+
+
+<p>Çalısan bir web sunucusunun türünü bulup bilinen güvenlik açıklarını ve test sırasında  kullanılacak uygun açıkları belirlemek.</p>
+
+
+
+<h2>Test Nasıl Yapılır</h2>
+
+
+
+<p>Piyasada kullanabileceğiniz birçok araç var. Bunları kullanarak web sunucusunun türünü ve  sürümünü bulacaksiniz.</p>
+
+
+
+<p>Şimdi httprecon aracını kullanarak localde kurduğum bir web sunucusunun türünü ve sürümünü bulacağım.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/sonuc.png" alt="" class="wp-image-31" srcset="https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/sonuc.png 539w, https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/sonuc-150x150.png 150w, https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/sonuc-300x298.png 300w, https://mehmetbaskir.github.io/mehmetbaskir/wp-content/uploads/2019/06/sonuc-100x100.png 100w" sizes="(max-width: 539px) 100vw, 539px" /></figure>
+
+
+
+<p>Bu sonuca göre web sunucum apache sürümü ise 2.4.39 çıktı. <br> Simdi Netcat aracı kullanılarak bulunmuş farkli web sunucularinin tepkilerini sizinle  paylasacağım.</p>
+
+
+
+<h4>Microsoft IIS 5.0 sunucusu:</h4>
+
+
+
+<p>HTTP/1.1 200 OK <br> Server: Microsoft-IIS/5.0 <br> Expires: Yours, 17 Jun 2003 01:41: 33 GMT <br> Date: Mon, 16 Jun 2003 01:41: 33 GMT <br> Content-Type: text/HTML <br> Accept-Ranges: bytes <br> Last-Modified: Wed, 28 May 2003 15:32: 21 GMT <br> ETag: b0aac0542e25c31: 89d <br> Content-Length: 7369</p>
+
+
+
+<h4>Netscape Enterprise 4.1 sunucusu:</h4>
+
+
+
+<p>HTTP/1.1 200 OK <br> Server: Netscape-Enterprise/4.1 <br> Date: Mon, 16 Jun 2003 06:19: 04 GMT <br> Content-type: text/HTML <br> Last-modified: Wed, 31 Jul 2002 15:37: 56 GMT <br> Content-length: 57 <br> Accept-ranges: bytes <br> Connection: close</p>
+
+
+
+<h4>Apache 1.3.23 sunucusu:</h4>
+
+
+
+<p>HTTP/1.1 200 OK <br> Date: Sun, 15 Jun 2003 17:10: 49 GMT <br> Server: Apache/1.3.23 <br> Last-Modified: Thu, 27 Feb 2003 03:48: 19 GMT <br> ETag: 32417-c4-3e5d8a83 <br> Accept-Ranges: bytes <br> Content-Length: 196 <br> Connection: close <br> Content-Type: text/HTML</p>
+
+
+
+<p>Örneklerim bu şekilde siz bir web sunucusunun türünü ve sürümünü bulduktan sonra o web  sunucusunun o sürümünde herhangi bir güvenlik zafiyeti olup olmadığını öğrenirsiniz,  o sürüme uygun açıkları belirlersiniz ve  testinizi ona göre şekillendirebilirsiniz.</p>
+
+
+
+<h3>Araçlar</h3>
+
+
+
+<p>-)httprint &#8211; https://www.net-square.com/httprint.html</p>
+
+
+
+<p>-)httprecon &#8211; https://www.computec.ch/projekte/httprecon/?s=download</p>
+
+
+
+<p>-)Netcraft &#8211; https://www.netcraft.com/</p>
+
+
+
+<p></p>
+
+
+
+<p>Piyasada daha farklı bir sürü araç var hangisini kullanmak isterseniz kullanabilirsiniz.</p>
+
+
+
+<p>Bir sonraki yazımda görüşmek üzere&#8230;</p>
+]]></content:encoded>
+							<wfw:commentRss>https://mehmetbaskir.github.io/mehmetbaskir/2019/06/28/web-sunucusu-parmakiziotg-info-002/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>
